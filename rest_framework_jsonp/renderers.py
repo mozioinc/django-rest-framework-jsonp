@@ -39,4 +39,4 @@ class JSONPRenderer(JSONRenderer):
         callback = self.get_callback(renderer_context)
         json = super(JSONPRenderer, self).render(data, accepted_media_type,
                                                  renderer_context)
-        return callback.encode(self.charset) + b'(' + json + b');'
+        return callback.encode(self.charset) + b'(' + json + b')'
